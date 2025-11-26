@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import './../styles/App.css';
-import ChildComponent from "./ChildComponent";
+import TodoList from "./TodoList";
 
 const App = () => {
   const [todos, setTodos] = useState([
@@ -20,9 +20,9 @@ const App = () => {
   return (
     <div id="main">
         <h1>Parent Component</h1>
-        <ChildComponent todos={todos} handleComplete={handleComplete} />
+        <TodoList todos={todos} handleComplete={handleComplete} />
     </div>
   );
 };
 
-export default App
+export default App;
