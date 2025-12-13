@@ -2,7 +2,7 @@ import React from "react";
 
 const TodoList = ({ todos, handleComplete }) => {
     return (
-        <div>
+        <div className="child-component">
             <h2>Child Component</h2>
             <ul>
                 {todos.map(todo => (
